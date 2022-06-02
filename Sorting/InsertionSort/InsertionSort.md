@@ -6,6 +6,6 @@
     - if none found place it at the beginning of the sorted array
 - Time Complexity
     - O(n^2)
-    - Not efficient in time complexity, but can be efficient if the array is semi-sorted
+    - Not efficient in time complexity, but can be efficient with partially sorted arrays and small data sets
 - Space Complexity
     - O(1)

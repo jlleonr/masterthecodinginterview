@@ -7,6 +7,8 @@ def bubbleSort(nums: List[int]) -> None:
 
     lstLength: int = len(nums)
 
+    # swap every element on each iteration
+    # if next element to the right is smaller
     for i in range(lstLength - 1):
         for j in range(lstLength - 1):
             if nums[j] > nums[j + 1]:
