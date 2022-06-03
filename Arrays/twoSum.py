@@ -15,15 +15,13 @@ def sumTwo(nums: List[int], target: int) -> Tuple[int, int]:
     if len(nums) < 2:
         return None
 
-    comp: set = set()
     indexes: dict = dict()
 
     for index, value in enumerate(nums):
-        if value in comp:
-            return (indexes[target - value], index)
+        if value in indexes:
+            return (indexes[value], index)
 
-        comp.add(target - value)
-        indexes[value] = index
+        indexes[target - value] = index
 
     return None
 
