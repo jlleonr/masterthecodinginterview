@@ -33,4 +33,4 @@ class TestTrappedRainwater(unittest.TestCase):
         result: int = trw.trappedWaterOptimal(input)
 
         # Assert
-        self.assertEqual(result, 1)
+        self.assertEqual(result, 0)
