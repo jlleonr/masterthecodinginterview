@@ -1,7 +1,7 @@
 from typing import List, Tuple
-import unittest, sys
-
+import unittest
 import Arrays.twoSum as twoSum
+
 
 class Test_Arrays(unittest.TestCase):
     def test_twoSumBestCaseScenario(self):
@@ -10,7 +10,7 @@ class Test_Arrays(unittest.TestCase):
         target: int = 7
 
         # Act
-        result: Tuple = twoSum.sumTwo(nums= lst, target= target)
+        result: Tuple = twoSum.sumTwo(nums=lst, target=target)
 
         # Assert
         self.assertTupleEqual(result, (0, 3))
